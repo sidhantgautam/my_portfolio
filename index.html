@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sidhant's- Portfolio </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(18, 18, 62);
+
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.04rem;
+
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.3rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 0;
+
+        }
+
+        .firstSection>div {
+            width: 35%;
+
+        }
+
+        .leftSection {
+            font-size: 2rem;
+
+        }
+
+        .rightSection img {
+            width: 50%;
+            margin: 7px 0;
+
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .text-grey {
+            color: rgb(59, 59, 59);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 2rem;
+        }
+
+        .secondSection .box {
+            width: 80vw;
+            background: white;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 20px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 100px;
+            width: 150px;
+        }
+
+        .vertical-t1 {
+            position: relative;
+            top: 80px;
+            width: 150px;
+        }
+
+
+
+        footer {
+            background-color: #0e0e1a;
+            height: 233px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sidhant's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="Home.html">Home</li></a>
+                    <li><a href="/">About</li></a>
+                    <li><a href="/">Services</li></a>
+                    <li><a href="/">Projects</li></a>
+                    <li><a href="/">Contact</li></a>
+
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Sidhant</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="logo.png">
+            </div>
+        </section>
+        <hr>
+
+
+
+        <section class="secondSection">
+            <span class="text-grey">What I have done so far</span>
+            <h1>Projects</h1>
+
+            <div class="box">
+                <div class="vertical
+                    <img src="point.png" alt="" class="image-top">
+                    <div class="vertical-title">Netflix Clone</div>
+                </div>
+                <div class="vertical">
+                    <img src="point.png" alt="" class="image-top">
+                    <div class="vertical-title">Shoe Store Web Development</div>
+                </div>
+                <div class="vertical">
+                    <img src="point.png" alt="" class="image-top">
+                    <div class="vertical-title">AI Desktop Voice Assistant</div>
+                </div>
+                <div class="vertical">
+                    <img src="point.png" alt="" class="image-top">
+                    <div class="vertical-title">BUS MANAGEMENT SYSTEM</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Sidhant's Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>About</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
